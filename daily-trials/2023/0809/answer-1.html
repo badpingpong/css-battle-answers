@@ -1,0 +1,69 @@
+<div class="left-circle-container">
+  <div class="half-circle"></div>
+  <div class="quarter-circle left-rotation"></div>
+</div>
+<div class="right-circle-container">
+  <div class="half-circle right-rotation"></div>
+  <div class="quarter-circle sakasama"></div>
+</div>
+<style>
+  body {
+    background: #8d1c24;
+    position: relative;
+    width: 400px;
+    height: 300px;
+  }
+
+  .left-circle-container {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: min-content;
+    position: absolute;
+    top: -30;
+    bottom: 0;
+    margin: auto 0;
+    left: 72px;
+    right: 0;
+  }
+
+  .right-circle-container {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    width: min-content;
+    position: absolute;
+    top: 0;
+    bottom: -30;
+    margin: auto;
+    left: 0;
+    right: -100px;
+  }
+
+  .half-circle {
+    width: 140px;
+    height: 70px;
+    background: #ec9140;
+    border-radius: 140px 140px 0 0;
+    transform-origin: bottom;
+  }
+
+  .quarter-circle {
+    width: 70px;
+    height: 70px;
+    background: #ec9140;
+    border-radius: 70px 0 0 0;
+  }
+
+  .left-rotation {
+    transform: rotate(-90deg);
+  }
+
+  .right-rotation {
+    transform: rotate(90deg);
+  }
+
+  .sakasama {
+    transform: scaleY(-1);
+  }
+</style>
